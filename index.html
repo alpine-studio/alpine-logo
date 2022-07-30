@@ -8,7 +8,7 @@
 <body>
     <!-- logo -->
     <style>
-				* {box-sizing: border-box}
+	    * {box-sizing: border-box}
         body {
             margin: 0;
             padding: 0;
@@ -16,88 +16,106 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat&family=Cuprum&family=Montserrat:wght@400;900&family=Pacifico&display=swap');
 
+        /*
+        * Prefixed by https://autoprefixer.github.io
+        * PostCSS: v8.4.14,
+        * Autoprefixer: v10.4.7
+        * Browsers: last 4 version
+        */
+
         .alpine {
-            background-color: #222;
-            color: #fff;
-            font-weight: normal;
-            padding: 20px;
+                    background-color: #222;
+                    color: #fff;
+                    font-weight: normal;
+                    padding: 20px;
+                }
+                .alpine__group {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                }
+                .alpine__text {
+                    margin: 0;
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 400;
+                    font-size: 22px;
+                    margin-right: 20px;
+                                color: #ddd;
+                                position: relative;
+                                top: 5px;
+                }
+                .alpine__sign {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: inherit;
+                        -ms-flex-align: inherit;
+                            align-items: inherit;
+                    color: inherit;
+                    text-decoration: none;
+                    padding-right: 186px;
+                    margin-right: -186px;
+                }
+                .alpine__sign svg {
+                    width: 70px;
+                }
+                .alpine__sign__text {
+                    -webkit-transition: .3s all ease;
+                    -o-transition: .3s all ease;
+                    transition: .3s all ease;
+                    overflow: hidden;
+                    width: 0px;
+                }
+                .alpine__sign:hover .alpine__sign__text {
+                    width: 186px;
+                }
+                .alpine__sign__text h2 {
+                    -webkit-transition: 1s ease-out all;
+                    -o-transition: 1s ease-out all;
+                    transition: 1s ease-out all;
+                    font-size: 40px;
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    margin: 0 0 -5px 14px;
+                    opacity: 0;
+                }
+                .alpine__sign:hover .alpine__sign__text h2 {
+                            opacity: 1;
+                }
 
-            /* experimental */
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
+                @media (max-width: 676px) {
+                    .alpine__group {
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                    }
+                    .alpine__text {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                    .alpine__sign {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .alpine__sign__text {
+                        width: auto;
+                    }
+                    .alpine__sign__text h2 {
+                        opacity: 1;
+                    }
+                    .alpine__sign:hover .alpine__sign__text {
+                        width: auto;
+                    }
 
-        }
-        .alpine__group {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .alpine__text {
-            margin: 0;
-            font-family: Montserrat, sans-serif;
-            font-weight: 400;
-            font-size: 22px;
-            margin-right: 20px;
-						color: #ddd;
-						position: relative;
-						top: 5px;
-        }
-        .alpine__sign {
-            display: flex;
-            align-items: inherit;
-            color: inherit;
-            text-decoration: none;
-            padding-right: 186px;
-            margin-right: -186px;
-        }
-        .alpine__sign svg {
-            width: 70px;
-        }
-        .alpine__sign__text {
-            transition: .3s all ease;
-            overflow: hidden;
-            width: 0px;
-        }
-        .alpine__sign:hover .alpine__sign__text {
-            width: 186px;
-        }
-        .alpine__sign__text h2 {
-            transition: 1s ease-out all;
-            font-size: 40px;
-            font-family: Montserrat, sans-serif;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin: 0 0 -5px 14px;
-			opacity: 0;
-        }
-        .alpine__sign:hover .alpine__sign__text h2 {
-					opacity: 1;
-        }
-
-        @media (max-width: 676px) {
-            .alpine__group {
-                flex-direction: column;
-            }
-            .alpine__text {
-                margin-right: 0;
-            }
-            .alpine__sign {
-                padding: 0;
-                margin: 0;
-            }
-            .alpine__sign__text {
-                width: auto;
-            }
-            .alpine__sign__text h2 {
-                opacity: 1;
-            }
-			.alpine__sign:hover .alpine__sign__text {
-				width: auto;
-			}
-
-        }
+                }
     </style>
     <section id="alpine" class="alpine">
         <div class="alpine__group">
