@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Проект</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- logo -->
+    <style>
+				* {box-sizing: border-box}
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat&family=Cuprum&family=Montserrat:wght@400;900&family=Pacifico&display=swap');
+
+        .alpine {
+            background-color: #222;
+            color: #fff;
+            font-weight: normal;
+            padding: 20px;
+
+            /* experimental */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+        }
+        .alpine__group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .alpine__text {
+            margin: 0;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            margin-right: 20px;
+						color: #ddd;
+						position: relative;
+						top: 5px;
+        }
+        .alpine__sign {
+            display: flex;
+            align-items: inherit;
+            color: inherit;
+            text-decoration: none;
+            padding-right: 186px;
+            margin-right: -186px;
+        }
+        .alpine__sign svg {
+            width: 70px;
+        }
+        .alpine__sign__text {
+            transition: .3s all ease;
+            overflow: hidden;
+            width: 0px;
+        }
+        .alpine__sign:hover .alpine__sign__text {
+            width: 186px;
+        }
+        .alpine__sign__text h2 {
+            transition: 1s ease-out all;
+            font-size: 40px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 0 0 -5px 14px;
+						opacity: 0;
+        }
+        .alpine__sign:hover .alpine__sign__text h2 {
+					opacity: 1;
+        }
+
+        @media (max-width: 676px) {
+            .alpine__group {
+                flex-direction: column;
+            }
+            .alpine__text {
+                margin-right: 0;
+            }
+            .alpine__sign {
+                padding: 0;
+                margin: 0;
+            }
+            .alpine__sign__text {
+                width: auto;
+            }
+						.alpine__sign:hover .alpine__sign__text {
+							width: auto;
+						}
+        }
+    </style>
+    <section id="alpine" class="alpine">
+        <div class="alpine__group">
+            <h2 class="alpine__text">Сделано с заботой</h2>
+            <a class="alpine__sign" target="_blank" href="http://alpine-studio.ru">
+                <svg width="101" height="55" viewBox="0 0 101 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M59.6818 0L42.4659 22.9167L55.55 40.3335L48.2046 45.8333C40.446 35.5208 27.5455 18.3333 27.5455 18.3333L0 55H101L59.6818 0Z" fill="white"/>
+                </svg>
+                <div class="alpine__sign__text">
+                    <h2>Alpine</h2>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- <section id="alpine" style="background: #222222; width: 698px;">
+        <div class="group" style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 0px; gap: 30px; width: 698px; height: 59px;">
+            <h2 style="width: 361px; height: 41px; font-family: 'Montserrat'; font-style: normal; font-weight: 400; font-size: 34px; line-height: 41px; color: #FFFFFF; margin-top: 9px;margin-bottom: 9px;">
+                Сделано с заботой в</h2>
+            <svg width="101" height="55" viewBox="0 0 101 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M59.6818 0L42.4659 22.9167L55.55 40.3335L48.2046 45.8333C40.446 35.5208 27.5455 18.3333 27.5455 18.3333L0 55H101L59.6818 0Z" fill="white"/>
+            </svg>
+        </div>
+    </section> -->
+    <!-- /logo -->
+</body>
+</html>
