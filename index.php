@@ -1,8 +1,10 @@
+<?php header("Access-Control-Allow-Origin: *"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Проект</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<meta name="Access-Control-Allow-Origin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat&family=Cuprum&family=Montserrat:wght@400;900&family=Pacifico&display=swap">
 </head>
