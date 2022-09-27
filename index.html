@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Проект</title>
+    <title>Watermark | Alpine studio</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 		<meta name="Access-Control-Allow-Origin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat&family=Cuprum&family=Montserrat:wght@400;900&family=Pacifico&display=swap">
 </head>
 <body>
-    <!-- logo -->
     <style>
 	    * {box-sizing: border-box}
         body {
@@ -20,7 +19,8 @@
                     background-color: #222;
                     color: #fff;
                     font-weight: normal;
-										min-height: 150px;
+										max-height: 80px;
+										height: 100%;
                     padding: 20px;
 										display: flex;
 										justify-content: center;
@@ -42,7 +42,7 @@
                     margin: 0;
                     font-family: Montserrat, sans-serif;
                     font-weight: 400;
-                    font-size: 22px;
+                    font-size: 20px;
                     margin-right: 20px;
                                 color: #ddd;
                                 position: relative;
@@ -61,7 +61,9 @@
                     margin-right: -186px;
                 }
                 .alpine__sign svg {
-                    width: 70px;
+                    width: 51px;
+										position: relative;
+										top: 2px;
                 }
                 .alpine__sign__text {
                     -webkit-transition: .3s all ease;
@@ -81,8 +83,9 @@
                     font-family: Montserrat, sans-serif;
                     font-weight: 900;
                     text-transform: uppercase;
-                    margin: 0 0 -5px 14px;
+                    margin: 0 0 -5px 0px;
                     opacity: 0;
+										text-align: center;
                 }
                 .alpine__sign:hover .alpine__sign__text h2 {
                             opacity: 1;
@@ -97,17 +100,24 @@
                     }
                     .alpine__text {
                         margin-right: 0;
-                        margin-bottom: 10px;
+                        margin-bottom: 0;
+												font-size: 15px;
                     }
                     .alpine__sign {
                         padding: 0;
                         margin: 0;
                     }
+										.alpine__sign svg {
+											width: 36px;
+											top: 3px;
+										}
                     .alpine__sign__text {
                         width: auto;
                     }
                     .alpine__sign__text h2 {
                         opacity: 1;
+												font-size: 29px;
+												margin-left: 5px;
                     }
                     .alpine__sign:hover .alpine__sign__text {
                         width: auto;
@@ -137,6 +147,5 @@
             </svg>
         </div>
     </section> -->
-    <!-- /logo -->
 </body>
 </html>
